@@ -21,7 +21,8 @@ steps:
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
 - script: echo $(Build.StagingDirectory)
-- powershell: dir public
+- powershell: dir
+- powershell: Get-ChildItem -Path public -Recurse -Force
 
 # - task: PublishBuildArtifacts@1
 #   inputs: 
