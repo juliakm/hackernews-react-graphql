@@ -21,7 +21,7 @@ steps:
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
 - script: echo $(Build.StagingDirectory)
-- powershell: dir
+- powershell: dir public
 
 # - task: PublishBuildArtifacts@1
 #   inputs: 
