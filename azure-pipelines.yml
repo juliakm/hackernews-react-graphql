@@ -18,6 +18,7 @@ steps:
 - script: |
     npm install
     npm run build
+    npm install -g tslint typescript
   displayName: 'npm install and build'
 
 - script: |
